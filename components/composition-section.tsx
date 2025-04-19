@@ -66,7 +66,7 @@ export default function CompositionSection() {
                 intensity={1}
                 castShadow
               />
-              <CoffeeCupModel rotation={rotation} />
+              {/* <CoffeeCupModel rotation={rotation} /> */}
               <Environment preset="sunset" />
               <OrbitControls
                 enableZoom={false}

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { UserCircle, Menu, X } from "lucide-react";
+import bimacoLogo from "./../public/bimaco-logo.webp";
 
 export default function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -72,15 +73,15 @@ export default function NavBar() {
         <Link href="/">
           <div className="flex flex-col items-center">
             <Image
-              src="/placeholder.svg?height=40&width=120"
-              alt="Bima Logo"
+              src={bimacoLogo}
+              alt="Bimaco Logo"
               width={120}
-              height={40}
+              height={50}
               className="object-contain"
             />
-            <span className="text-xs text-[#B79237] mt-1 font-montserrat">
+            {/* <span className="text-xs text-[#B79237] mt-1 font-montserrat">
               LIFE FUTURE
-            </span>
+            </span> */}
           </div>
         </Link>
       </div>
