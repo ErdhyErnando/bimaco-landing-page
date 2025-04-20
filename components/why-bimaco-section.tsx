@@ -1,4 +1,4 @@
-import { Coffee, Heart, Star, Zap, Shield, Trophy } from "lucide-react"
+import { Coffee, Heart, Star, Zap, Shield, Trophy } from "lucide-react";
 
 const features = [
   {
@@ -31,16 +31,18 @@ const features = [
     title: "Award Winning",
     description: "Penghargaan kualitas internasional",
   },
-]
+];
 
 export default function WhyBimacoSection() {
   return (
-    <section className="w-full py-16 px-6 md:px-12 relative">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 font-raleway text-white">WHY BIMACO?</h2>
+    <section id="why-bima" className="w-full py-16 px-6 md:px-12 relative">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 font-raleway text-white">
+        WHY BIMACO?
+      </h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map((feature, index) => {
-          const Icon = feature.icon
+          const Icon = feature.icon;
           return (
             <div key={index} className="relative pt-8 group">
               {/* Icon Circle */}
@@ -50,11 +52,15 @@ export default function WhyBimacoSection() {
 
               {/* Card */}
               <div className="bg-[#B79237] rounded-xl p-6 pt-12 text-center min-h-[200px] flex flex-col items-center justify-center">
-                <h3 className="text-xl font-bold mb-2 font-montserrat text-white">{feature.title}</h3>
-                <p className="text-sm font-montserrat text-white/90">{feature.description}</p>
+                <h3 className="text-xl font-bold mb-2 font-montserrat text-white">
+                  {feature.title}
+                </h3>
+                <p className="text-sm font-montserrat text-white/90">
+                  {feature.description}
+                </p>
               </div>
             </div>
-          )
+          );
         })}
       </div>
 
@@ -63,6 +69,5 @@ export default function WhyBimacoSection() {
         <div className="h-px bg-gradient-to-r from-transparent via-[#B79237] to-transparent opacity-70"></div>
       </div>
     </section>
-  )
+  );
 }
-
