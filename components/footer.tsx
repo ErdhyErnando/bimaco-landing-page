@@ -25,7 +25,7 @@ export default function Footer() {
       {/* Adjusted padding and removed fixed height */}
       <div className="container mx-auto px-4 py-8">
         {/* Removed mb-8 from grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Left - Partner Logos */}
           <div className="flex items-center justify-center md:justify-start space-x-6">
             {" "}
