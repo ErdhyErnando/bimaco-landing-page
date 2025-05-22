@@ -125,9 +125,8 @@ export default function TestimonialSection() {
             <button
               key={index}
               onClick={() => scrollTo(index)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === selectedIndex ? "bg-[#B79237] w-8" : "bg-gray-300"
-              }`}
+              className={`w-2 h-2 rounded-full transition-all ${index === selectedIndex ? "bg-[#B79237] w-8" : "bg-gray-300"
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}

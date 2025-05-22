@@ -11,7 +11,7 @@ const blogPosts = [
     title: "5 Steps To Get Healthy",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1556911073-52527ac43761?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "health",
     date: "2024-03-01",
   },
@@ -20,7 +20,7 @@ const blogPosts = [
     title: "Benefits of Natural Coffee",
     description:
       "Discover the amazing health benefits of drinking natural, organic coffee and how it can improve your daily life.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1629248989876-07129a68946d?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "coffee",
     date: "2024-03-02",
   },
@@ -29,7 +29,7 @@ const blogPosts = [
     title: "Understanding Coffee Quality",
     description:
       "Learn how to identify high-quality coffee beans and what makes premium coffee stand out from regular varieties.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "education",
     date: "2024-03-03",
   },
@@ -37,7 +37,7 @@ const blogPosts = [
     id: 4,
     title: "Natural Energy Boosters",
     description:
-      "Explore natural ways to boost your energy levels throughout the day without relying on artificial supplements.",
+      "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     image: "/placeholder.svg?height=400&width=600",
     category: "health",
     date: "2024-03-04",
@@ -66,11 +66,10 @@ export default function BlogPage() {
               key={category}
               onClick={() => setSelectedCategory(category)}
               variant="outline"
-              className={`rounded-full px-6 py-2 font-montserrat ${
-                selectedCategory === category
-                  ? "bg-[#B79237] text-white hover:bg-[#B79237]/90"
-                  : "bg-darkBlue text-white hover:bg-[#B79237]/10"
-              }`}
+              className={`rounded-full px-6 py-2 font-montserrat ${selectedCategory === category
+                ? "bg-[#B79237] text-white hover:bg-[#B79237]/90"
+                : "bg-darkBlue text-white hover:bg-[#B79237]/10"
+                }`}
             >
               #{category}
             </Button>
